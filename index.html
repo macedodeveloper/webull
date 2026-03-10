@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raio-X — Iasmim Biasi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter+Tight:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="sidebar-nav" id="sidebar-nav" aria-label="Navegação do relatório">
+    <button type="button" class="sidebar-nav__toggle" id="sidebar-toggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+      <span class="sidebar-nav__toggle-icon"></span>
+    </button>
+    <div class="sidebar-nav__header">
+      <h2 class="sidebar-nav__title">Índice</h2>
+      <button type="button" class="sidebar-nav__collapse" id="sidebar-collapse" aria-label="Recolher índice" title="Recolher índice">
+        <span class="sidebar-nav__collapse-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+    <div class="sidebar-nav__panel" id="sidebar-panel">
+      <ul class="sidebar-nav__list">
+        <li><a href="#hero" class="sidebar-nav__link">Início</a></li>
+        <li><a href="#scores" class="sidebar-nav__link">Scores</a></li>
+        <li><a href="#intro" class="sidebar-nav__link">Introdução</a></li>
+        <li><a href="#sobre-voce" class="sidebar-nav__link">Sobre você</a></li>
+        <li><a href="#financas" class="sidebar-nav__link">Suas finanças</a></li>
+        <li><a href="#quote" class="sidebar-nav__link">Citação</a></li>
+        <li><a href="#mundo" class="sidebar-nav__link">Mundo</a></li>
+        <li><a href="#portfolio" class="sidebar-nav__link">Portfólio</a></li>
+        <li><a href="#estrategia" class="sidebar-nav__link">Estratégia WeBull</a></li>
+        <li><a href="#diferencas" class="sidebar-nav__link">Diferenças</a></li>
+        <li><a href="#ativos" class="sidebar-nav__link">Ativos</a></li>
+        <li><a href="#mensagem-final" class="sidebar-nav__link">Mensagem final</a></li>
+        <li><a href="#cta" class="sidebar-nav__link">Agendar</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page">
+    <!-- Hero -->
+    <section id="hero" class="hero section">
+      <div class="hero__container container">
+        <div class="hero__content">
+          <div class="hero__logo">
+            <img class="hero__logo-img" src="assets/0cfe657c80092b2cfb32acda7a385d499e2ca2cc.svg" alt="Raio-X" />
+            <span class="hero__logo-text">Raio-X</span>
+          </div>
+          <div class="hero__text">
+            <h1 class="heading-hero">Iasmim Biasi</h1>
+            <div class="hero__actions">
+              <p class="hero__reading-time">Tempo Médio de Leitura: <b>8 min</b></p>
+              <button type="button" class="hero__podcast-btn" id="podcast-trigger" aria-label="Ouça o relatório como podcast">
+                Ouça como um podcast
+              </button>
+              <button type="button" class="hero__slides-btn" id="slides-trigger" aria-label="Ver relatório em formato de apresentação">
+                Ver em slides
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="hero__video-wrap">
+          <video class="hero__video" autoplay loop playsInline muted controlsList="nodownload">
+            <source src="_videos/hero.webm" type="video/webm" />
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scores (bento) -->
+    <section id="scores" class="scores-bento section section--dark">
+      <div class="scores-bento__container container">
+        <div class="scores-bento__grid">
+          <div class="scores-bento__card scores-bento__card--main">
+            <span class="scores-bento__score-line">
+              <span class="scores-bento__value">6.2</span>
+              <span class="scores-bento__max">/10</span>
+            </span>
+            <p class="scores-bento__label">Score Financeiro Geral</p>
+          </div>
+          <div class="scores-bento__card">
+            <span class="scores-bento__score-line">
+              <span class="scores-bento__value">6.8</span>
+              <span class="scores-bento__max">/10</span>
+            </span>
+            <p class="scores-bento__label">Segurança Financeira</p>
+          </div>
+          <div class="scores-bento__card">
+            <span class="scores-bento__score-line">
+              <span class="scores-bento__value">7.0</span>
+              <span class="scores-bento__max">/10</span>
+            </span>
+            <p class="scores-bento__label">Planejamento de Futuro</p>
+          </div>
+          <div class="scores-bento__card">
+            <span class="scores-bento__score-line">
+              <span class="scores-bento__value">5.5</span>
+              <span class="scores-bento__max">/10</span>
+            </span>
+            <p class="scores-bento__label">Organização Financeira</p>
+          </div>
+          <div class="scores-bento__card">
+            <span class="scores-bento__score-line">
+              <span class="scores-bento__value">5.8</span>
+              <span class="scores-bento__max">/10</span>
+            </span>
+            <p class="scores-bento__label">Comportamento Financeiro</p>
+          </div>
+          <div class="scores-bento__card">
+            <span class="scores-bento__score-line">
+              <span class="scores-bento__value">6.0</span>
+              <span class="scores-bento__max">/10</span>
+            </span>
+            <p class="scores-bento__label">Investimentos</p>
+          </div>
+          <div class="scores-bento__card">
+            <span class="scores-bento__score-line">
+              <span class="scores-bento__value">6.1</span>
+              <span class="scores-bento__max">/10</span>
+            </span>
+            <p class="scores-bento__label">Eficiência de Gastos</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro -->
+    <section id="intro" class="intro section section--dark">
+      <div class="intro__container container">
+        <div class="intro__card">
+          <img class="intro__avatar" src="assets/avatar-nicolas.png" alt="Nicolas Garcia" />
+          <div class="intro__message">
+            <p><b>Oi Iasmim,</b></p>
+            <p>É um prazer ter você com a gente. Preparei esse relatório com base na nossa conversa — aqui você vai encontrar um resumo do que entendi sobre sua história, o momento que está vivendo, e o que recomendamos pra sua carteira a partir disso. Qualquer dúvida ou ajuste, é só me chamar.</p>
+            <p class="signature">– Nicolas Garcia</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- O que eu entendi sobre você -->
+    <section id="sobre-voce" class="section-understand section section--dark">
+      <div class="container section-understand">
+        <h2 class="heading-section section-understand__title">O que eu entendi<br />sobre você</h2>
+        <div class="section-understand__content">
+          <!-- Card: Estilo de Vida -->
+          <article class="card">
+            <div>
+              <h3 class="card__title">Estilo de Vida & Sonhos</h3>
+              <p class="card__body">Iasmim, você tem um estilo de vida dinâmico, saudável e voltado ao equilíbrio entre corpo e mente. No seu tempo livre, gosta de <b>correr, praticar yoga e viajar</b>, buscando experiências que tragam bem-estar, energia e novas perspectivas. Seu amor por viagens vai além do lazer: você sonha em <b>conhecer todos os continentes</b> ao longo da vida, e o próximo passo desse projeto será uma <b>viagem para a Oceania</b>, mais especificamente para a <b>Austrália</b>, onde pretende visitar um grande amigo. Estima um custo de cerca de <b>R$ 20 mil</b> para essa experiência, mostrando que você planeja seus sonhos de forma organizada e realista.</p>
+            </div>
+            <div class="cards-grid" style="grid-template-columns: repeat(3, 1fr);">
+              <div class="card-mini">
+                <img class="card-mini__icon" src="assets/07f66b6de5381bebbe9472710e0df4c9007cc3d8.svg" alt="" />
+                <span class="card-mini__label">Correr</span>
+              </div>
+              <div class="card-mini">
+                <img class="card-mini__icon" src="assets/b3047501d7e49c0ca713149b27445027b3a9d098.svg" alt="" />
+                <span class="card-mini__label">Yoga</span>
+              </div>
+              <div class="card-mini">
+                <img class="card-mini__icon" src="assets/b375afbe9d3562fc25f2fe541bf6c44051f3c9d6.svg" alt="" />
+                <span class="card-mini__label">Viajar</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card: Visão de Futuro -->
+          <article class="card">
+            <div>
+              <h3 class="card__title">Visão de Futuro & Planos de Vida</h3>
+              <p class="card__body">Você tem um olhar maduro sobre o futuro e busca construir uma vida pautada em <b>estabilidade, liberdade e propósito.</b> Deseja <b>se aposentar com tranquilidade</b>, de preferência antes dos 60 anos, mas sem deixar de trabalhar — apenas reduzindo o ritmo para desfrutar mais das conquistas acumuladas. Aos <b>31 anos</b>, você demonstra clareza e autoconhecimento, com planos bem definidos: <b>casar, ter filhos, comprar um carro e uma casa</b>, seguindo uma trajetória sólida e planejada. Sua meta de renda para aposentadoria é de <b>R$ 30 mil mensais</b>, suficiente para garantir conforto, viagens e uma rotina sem preocupações financeiras.</p>
+            </div>
+            <div class="card-timeline">
+              <img class="card-timeline__img" src="assets/timeline.png" alt="Linha do tempo: 2026, Casar, Filhos, Carro, Casa, 60 anos" />
+            </div>
+          </article>
+
+          <!-- Card: Objetivos -->
+          <article class="card">
+            <div>
+              <h3 class="card__title">Objetivos de Curto e Médio Prazo</h3>
+              <p class="card__body">Entre seus objetivos de curto e médio prazo, o foco está em <b>comprar um carro e adquirir um imóvel próprio</b>, consolidando sua independência patrimonial. O carro que deseja tem um valor estimado de <b>R$ 150 mil</b>, e você já iniciou o planejamento para alcançar essa meta. Esse conjunto de planos reflete seu perfil determinado e seu desejo de equilibrar segurança financeira com qualidade de vida.<br /><br />Atualmente, seu patrimônio é de aproximadamente <b>R$ 350 mil</b>, incluindo investimentos e bens, um excelente ponto de partida para sua idade.</p>
+            </div>
+            <div class="cards-grid" style="grid-template-columns: repeat(2, 1fr);">
+              <div class="card-mini">
+                <img class="card-mini__icon" src="assets/e4994a9b2f37d822a492d1ec39eaa809d73a6ba2.svg" alt="" />
+                <span class="card-mini__label">Comprar um carro</span>
+              </div>
+              <div class="card-mini">
+                <img class="card-mini__icon" src="assets/f143667d81638411ed9c6156905b2316d68ad858.svg" alt="" />
+                <span class="card-mini__label">Adquirir imóvel próprio</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card: Perfil Profissional -->
+          <article class="card">
+            <div>
+              <h3 class="card__title">Perfil Profissional & Relação com Investimentos</h3>
+              <p class="card__body">Profissionalmente, você trabalha com <b>produtos de investimento no Nubank</b>, o que lhe proporciona uma visão aprofundada do mercado financeiro e reforça sua competência na gestão de recursos. Apesar de estar imersa nesse universo, você prefere <b>não se envolver diretamente na gestão dos próprios investimentos</b>, buscando alguém de confiança para cuidar disso por você — o que mostra que valoriza <b>praticidade, segurança e tranquilidade</b> nas decisões financeiras.</p>
+            </div>
+            <div class="card-row">
+              <img class="card-row__icon" src="assets/8afb6f28035bd9b44d4151dfb43f0946aefa9b78.svg" alt="" />
+              <span class="card-row__text">Especialista no mercado financeiro</span>
+            </div>
+          </article>
+
+          <!-- Card: Proteção -->
+          <article class="card">
+            <div>
+              <h3 class="card__title">Proteção & Segurança</h3>
+              <p class="card__body">Em relação à proteção, você já possui <b>plano de saúde</b> e <b>seguro de vida corporativo</b>, garantindo segurança e estabilidade em caso de imprevistos.</p>
+            </div>
+            <div class="cards-grid" style="grid-template-columns: repeat(2, 1fr);">
+              <div class="card-mini">
+                <img class="card-mini__icon" src="assets/b702c27232166c052430d65ef350fd34a5f42a25.svg" alt="" />
+                <span class="card-mini__label">Plano de saúde</span>
+              </div>
+              <div class="card-mini">
+                <img class="card-mini__icon" src="assets/bb514b42ee7c2aa9e21b436a5f37e2b3ffe4f6bb.svg" alt="" />
+                <span class="card-mini__label">Seguro de vida corporativo</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card: Momento de Vida -->
+          <article class="card">
+            <div>
+              <h3 class="card__title">Momento de Vida Atual</h3>
+              <p class="card__body">No campo pessoal, você é <b>solteira</b> e <b>não tem filhos</b>, o que lhe permite direcionar seus esforços atuais ao desenvolvimento profissional e à realização de metas pessoais.</p>
+            </div>
+            <div class="card-row">
+              <img class="card-row__icon" src="assets/cf3a8166734e169d3061de5713de9037b9c8aea8.svg" alt="" />
+              <span class="card-row__text">Fase de Construção</span>
+            </div>
+          </article>
+
+          <!-- Card: Perfil de Investidora -->
+          <article class="card">
+            <div>
+              <h3 class="card__title">Perfil de Investidora</h3>
+              <p class="card__body">Seu perfil de investidora é <b>moderado</b>, equilibrando <b>crescimento e segurança</b> de forma racional e estratégica. Você entende a importância de correr alguns riscos para alcançar objetivos maiores, mas sem abrir mão da estabilidade.</p>
+            </div>
+            <div class="cards-grid" style="grid-template-columns: 1fr 1fr; grid-template-rows: auto auto;">
+              <div class="card-mini card--highlight" style="grid-row: span 2;">
+                <img class="card-mini__icon" src="assets/48a75bc7eb500bc8298ecd099e7b039f43735800.svg" alt="" />
+                <span class="card-mini__label">Perfil Moderado</span>
+              </div>
+              <div class="card-row">
+                <img class="card-row__icon" src="assets/d157252a2bdb74941e198046d400fdfa6a07d122.svg" alt="" />
+                <span class="card-row__text">Segurança</span>
+              </div>
+              <div class="card-row">
+                <img class="card-row__icon" src="assets/40fe3200f90efcd147151c34c9199dd77feff32c.svg" alt="" />
+                <span class="card-row__text">Crescimento</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Finanças -->
+    <section id="financas" class="section-financas section section--dark">
+      <div class="container">
+        <div class="section-title">
+          <h2 class="heading-section">Tudo que entendemos sobre suas finanças</h2>
+          <p class="text-body">Através da leitura dos seus dados financeiros, conseguimos montar um retrato fiel — e até curioso — do seu perfil como consumidor e investidor. Ao analisar seus gastos dos últimos 6 meses, fica claro que você tem uma boa organização financeira — mas também há pontos de atenção e oportunidades reais de melhora. Aqui vai o diagnóstico completo:</p>
+        </div>
+
+        <div class="profile-carousel-wrap">
+          <h3 class="section-subtitle">Perfil financeiro</h3>
+          <div class="stats-carousel" role="region" aria-label="Métricas do perfil financeiro">
+            <div class="stat-card stat-card--highlight">
+              <span class="stat-card__value">R$ 249.137,00</span>
+              <span class="stat-card__label">Investido hoje</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__value">R$ 71.235,00</span>
+              <span class="stat-card__label">Reserva de emergência</span>
+            </div>
+            <div class="stat-card">
+              <div>
+                <span class="stat-card__value">30</span>
+                <span class="stat-card__label" style="opacity:0.75;font-size:24px;">/mês</span>
+              </div>
+              <span class="stat-card__label">Número médio de transações</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__value">26%</span>
+              <span class="stat-card__label">Limite de crédito utilizado</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__value">R$ 1.478,00</span>
+              <span class="stat-card__label">Média por transação</span>
+            </div>
+            <div class="stat-card">
+              <div>
+                <span class="stat-card__value">R$ 21.920,10</span>
+                <span class="stat-card__label" style="opacity:0.75;font-size:24px;">/mês</span>
+              </div>
+              <span class="stat-card__label">Gasto total médio (últimos 6 meses)</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__value">R$ 1.697,43</span>
+              <span class="stat-card__label">Fatura média do cartão (últimos 6 meses)</span>
+            </div>
+          </div>
+          <div class="stats-carousel-nav" role="group" aria-label="Navegação do carrossel">
+            <button type="button" class="stats-carousel-nav__btn stats-carousel-nav__btn--prev" aria-label="Anterior">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <button type="button" class="stats-carousel-nav__btn stats-carousel-nav__btn--next" aria-label="Próximo">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="section-subtitle">Seu melhor mês: Agosto</h3>
+          <div class="month-grid">
+            <div class="stat-card">
+              <span class="stat-card__value">R$ 25.394,33</span>
+              <span class="stat-card__label">Total de entradas</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__value">R$ 23.832,25</span>
+              <span class="stat-card__label">Gasto total</span>
+            </div>
+            <div class="stat-card stat-card--highlight">
+              <p class="card__body" style="margin-bottom:16px;">Em agosto de 2025, você apresentou o melhor desempenho financeiro dos últimos seis meses, com entradas de R$ 25.394,33 e saídas de R$ 23.832,25, resultando em um saldo positivo de R$ 1.562,08.</p>
+              <p class="card__title" style="margin:0;font-size:20px;">O que aconteceu</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="section-subtitle">Seu pior mês: Setembro</h3>
+          <div class="month-grid">
+            <div class="stat-card">
+              <span class="stat-card__value">R$ 26.609,13</span>
+              <span class="stat-card__label">Total de entradas</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__value">R$ 36.858,48</span>
+              <span class="stat-card__label">Gasto total</span>
+            </div>
+            <div class="stat-card stat-card--highlight">
+              <p class="card__body" style="margin-bottom:16px;">Já setembro foi o pior mês, com entradas de R$ 26.609,13 e saídas de R$ 36.858,48, impactado principalmente por gastos elevados com cartão de crédito.</p>
+              <p class="card__title" style="margin:0;font-size:20px;">O que aconteceu</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="section-subtitle">Os seus maiores gastos recorrentes</h3>
+          <div class="expense-grid">
+            <div class="expense-card">
+              <span class="expense-card__value">R$ 1.616,00</span>
+              <div>
+                <p class="expense-card__category">Restaurantes, bares e lanchonetes</p>
+                <p class="expense-card__hint">Oportunidade: Explorar alternativas como Duo Gourmet.</p>
+              </div>
+            </div>
+            <div class="expense-card">
+              <span class="expense-card__value">R$ 780,00</span>
+              <div>
+                <p class="expense-card__category">Táxi e transporte privado urbano</p>
+                <p class="expense-card__hint">Oportunidade: Realizar assinaturas que dão desconto nas corridas</p>
+              </div>
+            </div>
+            <div class="expense-card">
+              <span class="expense-card__value">R$ 774,00</span>
+              <div>
+                <p class="expense-card__category">Saúde</p>
+                <p class="expense-card__hint">Ter uma reserva para esse tipo de imprevisto</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tip-box">
+          <p>Se ajustar apenas essas frentes, pode ajudar a <span class="accent-cyan">economizar entre R$ 253,50 e R$ 317,00 — sem perder qualidade de vida</span> e assim aumentar os aportes mensais, visando atingir seus objetivos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote -->
+    <section id="quote" class="section-quote section">
+      <div class="container">
+        <p class="section-quote__text">Essas informações são fundamentais. Entender não só o perfil de risco, mas os valores, a família e os objetivos reais do cliente ajuda a construir uma alocação com propósito. Isso é planejamento de verdade.</p>
+      </div>
+    </section>
+
+    <!-- Mundo -->
+    <section id="mundo" class="section-mundo section section--dark">
+      <div class="container">
+        <h2 class="heading-section">O que está acontecendo no mundo - e como isso afeta sua vida</h2>
+        <div class="world-cards">
+          <article class="world-card">
+            <h3 class="world-card__title">Cenário geral</h3>
+            <div class="world-card__body">
+              <p>Outubro trouxe sinais de <b>recuperação dos mercados</b>, com o Ibovespa voltando a se aproximar das máximas históricas e o ambiente externo mais favorável após a <b>trégua comercial entre EUA e China</b>. A inflação segue comportada tanto no Brasil quanto nos EUA, o que reforça a perspectiva de <b>novos cortes de juros</b> pelos bancos centrais.</p>
+              <p>Por outro lado, ainda há <b>incertezas fiscais internas</b> e o <b>shutdown americano</b> mantém certa volatilidade global.</p>
+            </div>
+          </article>
+          <article class="world-card">
+            <h3 class="world-card__title">Impacto no seu portfólio</h3>
+            <div class="world-card__body">
+              <p>Como sua carteira está majoritariamente em <b>Renda Fixa (87,5%)</b>, o momento é <b>positivo</b> para você. A tendência de <b>queda dos juros</b> valoriza os títulos que você já possui, principalmente os <b>prefixados</b> e <b>indexados à inflação</b>.</p>
+            </div>
+          </article>
+          <article class="world-card">
+            <h3 class="world-card__title">Como isso se conecta aos seus objetivos</h3>
+            <div class="world-card__body">
+              <p>Iasmim, o momento reforça a importância de <b>manter disciplina e visão de longo prazo</b>. Sua estratégia, que busca <b>equilíbrio entre estabilidade e crescimento</b>, está alinhada com o atual ciclo econômico.</p>
+            </div>
+          </article>
+          <article class="world-card">
+            <h3 class="world-card__title">Em resumo</h3>
+            <div class="world-card__body">
+              <p>O cenário é de <b>otimismo moderado</b>. A renda fixa vive um bom momento, o ambiente global está mais leve, e a inflação sob controle traz <b>segurança</b> para o investidor.</p>
+            </div>
+          </article>
+        </div>
+        <div class="world-carousel-nav" role="group" aria-label="Navegação do carrossel">
+          <button type="button" class="world-carousel-nav__btn world-carousel-nav__btn--prev" aria-label="Anterior">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <button type="button" class="world-carousel-nav__btn world-carousel-nav__btn--next" aria-label="Próximo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section-portfolio section section--dark">
+      <div class="container">
+        <h2 class="heading-section">Seu Portfólio Atual</h2>
+        <div class="portfolio-cards">
+          <div class="portfolio-card">
+            <h3 class="section-subtitle">Quanto você tem em cada produto</h3>
+            <div class="portfolio-chart chart-wrapper">
+              <canvas id="chart-portfolio-bars" aria-label="Patrimônio por produto em reais"></canvas>
+            </div>
+            <div class="portfolio-desc text-body">
+              <p><b>Patrimônio total:</b> R$ 249.137,00. A maior parte está em <b>Renda Fixa</b>, com R$ 218.144,00 (<b>87,6%</b>). Em seguida, o <b>Tesouro</b> representa R$ 23.031,00 (<b>9,2%</b>). Já os <b>Fundos Listados</b> somam R$ 7.962,00 (<b>3,2%</b>).</p>
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <h3 class="section-subtitle">Como está a distribuição atual</h3>
+            <div class="portfolio-chart chart-wrapper chart-wrapper--donut">
+              <canvas id="chart-portfolio-donut" aria-label="Distribuição percentual do portfólio"></canvas>
+            </div>
+            <p class="portfolio-desc text-body">Essa composição demonstra um portfólio <b>conservador e equilibrado</b>, com foco em <b>proteção do capital e renda previsível</b>, sem abrir mão de uma pequena parcela em ativos que podem agregar ganhos acima da renda fixa tradicional.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Estratégia WeBull (light) -->
+    <section id="estrategia" class="section-strategy section section--light">
+      <div class="strategy-grid container">
+        <img class="strategy__image" src="assets/strategy-webull.png" alt="Estratégia WeBull - fluxo e processo de investimento" />
+        <div>
+          <h2 class="strategy__title">A estratégia da <span class="brand">We</span><span class="brand">Bull</span></h2>
+          <div class="strategy__body">
+            <p>Na <b>WeBull</b>, estruturamos uma carteira baseada em <b>estratégias passivas e descorrelacionadas</b>, sempre guiadas pelos seus objetivos pessoais. Nosso foco é <b>reduzir custos</b> e <b>otimizar a alocação</b>, para que você alcance suas metas <b>no menor tempo possível e com consistência</b>.</p>
+            <p>A lógica é simples: em vez de tentar prever o mercado, buscamos <b>diversificação global</b>, <b>baixo custo</b> e <b>alinhamento</b> com o que realmente importa — seu futuro financeiro.</p>
+            <p>Para o seu perfil que entendemos ser <b>moderado</b> trazer um equilíbrio entre <b>estabilidade</b> e <b>crescimento</b>. Temos <b>35% em pós-fixados</b>, <b>25% em inflação</b> e <b>7,5% em prefixados</b>, garantindo boa base na renda fixa. Ao mesmo tempo, ampliamos diversificação com <b>16,5% em multimercados</b>, <b>5% em renda variável Brasil</b> e <b>7% no exterior</b>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diferenças (light) -->
+    <section id="diferencas" class="section-differences section section--light">
+      <div class="container">
+        <h2 class="heading-section">As principais diferenças pro que a gente acredita que seja o melhor pra você, baseado no seu perfil</h2>
+        <div class="differences-chart chart-wrapper">
+          <canvas id="chart-differences" aria-label="Alocação atual vs recomendada por categoria"></canvas>
+        </div>
+        <div class="diff-cards">
+          <div class="diff-card">
+            <p>Com base na análise do seu portfólio atual e no perfil <b>moderado</b>, identificamos que sua carteira está bastante concentrada em <b>Renda Fixa (87,55%)</b> e <b>Tesouro (9,24%)</b>, enquanto a parcela em <b>Fundos Listados (3,19%)</b> é reduzida. Essa composição privilegia a <b>segurança</b> e a <b>previsibilidade</b>.</p>
+          </div>
+          <div class="diff-card">
+            <p>De acordo com a alocação ideal para o perfil <b>moderado</b>, o portfólio sugerido teria cerca de <b>67,5% em Renda Fixa</b> — distribuídos entre <b>35% em pós-fixados, 25% em inflação</b> e <b>7,5% em prefixados</b> — além de <b>16,5% em Multimercados, 5% em Ações Brasil, 6% em Global e 2% em Fundos Listados</b>. Essa combinação visa <b>equilíbrio</b> entre <b>proteção</b> e <b>retorno potencial</b>.</p>
+          </div>
+          <div class="diff-card">
+            <p>Recomendamos <b>reduzir parte da Renda Fixa</b> e <b>realocar gradualmente em Multimercados e Global</b>, aproveitando oportunidades de diversificação que aumentam o potencial de retorno sem comprometer a segurança da carteira. Dessa forma, sua alocação se torna mais <b>equilibrada</b> e aderente ao perfil <b>moderado</b>, dentro da filosofia <b>WeBull</b> de carteira passiva, <b>diversificada</b>, <b>descorrelacionada</b> e de <b>baixo custo</b>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ativos (light) -->
+    <section id="ativos" class="section-assets section section--light">
+      <div class="container">
+        <h2 class="heading-section">Os ativos que mais gostamos para os seus objetivos</h2>
+        <div class="asset-cards-wrap">
+          <div class="asset-cards asset-cards--scroll">
+            <article class="asset-card asset-card--full">
+              <div class="asset-card__content">
+                <h3 class="asset-card__name">Selection Multimercado Plus FIC FIM</h3>
+                <p class="asset-card__desc">Fundo multimercado que mistura várias estratégias e mercados, com gestão ativa para buscar retornos consistentes.</p>
+              </div>
+              <div class="asset-card__meta">
+                <span class="asset-card__category">Multimercado</span>
+                <span class="asset-card__pct">12,5%</span>
+              </div>
+            </article>
+            <article class="asset-card asset-card--full">
+              <div class="asset-card__content">
+                <h3 class="asset-card__name">BOVA11</h3>
+                <p class="asset-card__desc">ETF que acompanha o Ibovespa, reunindo as ações mais negociadas da B3.</p>
+              </div>
+              <div class="asset-card__meta">
+                <span class="asset-card__category">Renda Variável</span>
+                <span class="asset-card__pct">15%</span>
+              </div>
+            </article>
+            <article class="asset-card asset-card--full">
+              <div class="asset-card__content">
+                <h3 class="asset-card__name">XFIX11</h3>
+                <p class="asset-card__desc">ETF que acompanha o IFIX, dando exposição diversificada ao mercado de fundos imobiliários no Brasil.</p>
+              </div>
+              <div class="asset-card__meta">
+                <span class="asset-card__category">Fundos Listados</span>
+                <span class="asset-card__pct">8%</span>
+              </div>
+            </article>
+            <article class="asset-card asset-card--full">
+              <div class="asset-card__content">
+                <h3 class="asset-card__name">GOLD11</h3>
+                <p class="asset-card__desc">ETF que replica o preço do ouro. Serve como proteção contra crises, inflação e diversificação da carteira.</p>
+              </div>
+              <div class="asset-card__meta">
+                <span class="asset-card__category">Alternativos</span>
+                <span class="asset-card__pct">3,5%</span>
+              </div>
+            </article>
+            <article class="asset-card asset-card--full">
+              <div class="asset-card__content">
+                <h3 class="asset-card__name">HASH11</h3>
+                <p class="asset-card__desc">ETF de cripto que acompanha o Nasdaq Crypto Index™, trazendo diversificação e acesso simples ao mercado.</p>
+              </div>
+              <div class="asset-card__meta">
+                <span class="asset-card__category">Alternativos</span>
+                <span class="asset-card__pct">3,5%</span>
+              </div>
+            </article>
+            <article class="asset-card asset-card--full">
+              <div class="asset-card__content">
+                <h3 class="asset-card__name">BNDX11</h3>
+                <p class="asset-card__desc">ETF de renda fixa global, com mais de 6.500 títulos fora dos EUA, grau de investimento e diversificação internacional.</p>
+              </div>
+              <div class="asset-card__meta">
+                <span class="asset-card__category">Global</span>
+                <span class="asset-card__pct">2,5%</span>
+              </div>
+            </article>
+            <article class="asset-card asset-card--full">
+              <div class="asset-card__content">
+                <h3 class="asset-card__name">WRLD11</h3>
+                <p class="asset-card__desc">ETF global que investe em ~10 mil empresas no mundo todo, diversificando entre países desenvolvidos e emergentes.</p>
+              </div>
+              <div class="asset-card__meta">
+                <span class="asset-card__category">Global</span>
+                <span class="asset-card__pct">5%</span>
+              </div>
+            </article>
+          </div>
+          <div class="assets-carousel-nav" role="group" aria-label="Navegação do carrossel de ativos">
+            <button type="button" class="assets-carousel-nav__btn assets-carousel-nav__btn--prev" aria-label="Anterior">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <button type="button" class="assets-carousel-nav__btn assets-carousel-nav__btn--next" aria-label="Próximo">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mensagem de fechamento (light) -->
+    <section id="mensagem-final" class="section-closing section section--light">
+      <div class="container closing-layout">
+        <img class="closing-avatar" src="assets/avatar-nicolas.png" alt="Nicolas Garcia" />
+        <div class="closing-text">
+          <p class="closing-greeting">Iasmim,</p>
+          <div class="strategy__body">
+            <p>Mais do que montar uma carteira eficiente, nosso compromisso é com a construção da sua liberdade. Acreditamos que investir bem não é sobre correr atrás do melhor ativo do mês — é sobre alinhar cada escolha ao que realmente importa na sua vida: a segurança da sua família, a tranquilidade de saber que o que você está construindo tem direção.</p>
+            <p>Por isso, cada ajuste que sugerimos aqui tem um propósito claro: proteger o que você já conquistou, dar mais potência ao seu crescimento e te deixar preparado para aproveitar com mais leveza tudo o que vem pela frente.</p>
+            <p>Essa jornada é sua. A gente só está aqui pra garantir que você viaje com conforto, segurança e visão de longo prazo.</p>
+            <p><b>Nicolas Garcia</b></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Agendar (light) -->
+    <section id="cta" class="section-cta section section--light">
+      <div class="container cta-content">
+        <h2 class="cta-title">Agende um horário com a gente no link abaixo</h2>
+        <div class="calendly-embed" aria-hidden="true">
+          <div class="calendly-embed__header">
+            <span class="calendly-embed__month">Março 2026</span>
+            <span class="calendly-embed__nav">‹ ›</span>
+          </div>
+          <div class="calendly-embed__body">
+            <div class="calendly-embed__sidebar">
+              <div class="calendly-embed__weekdays">
+                <span>Dom</span><span>Seg</span><span>Ter</span><span>Qua</span><span>Qui</span><span>Sex</span><span>Sáb</span>
+              </div>
+              <div class="calendly-embed__grid">
+                <span class="calendly-embed__cell calendly-embed__cell--other">24</span><span class="calendly-embed__cell calendly-embed__cell--other">25</span><span class="calendly-embed__cell">26</span><span class="calendly-embed__cell">27</span><span class="calendly-embed__cell">28</span><span class="calendly-embed__cell">1</span><span class="calendly-embed__cell">2</span>
+                <span class="calendly-embed__cell">3</span><span class="calendly-embed__cell">4</span><span class="calendly-embed__cell calendly-embed__cell--today">5</span><span class="calendly-embed__cell">6</span><span class="calendly-embed__cell">7</span><span class="calendly-embed__cell">8</span><span class="calendly-embed__cell">9</span>
+                <span class="calendly-embed__cell">10</span><span class="calendly-embed__cell">11</span><span class="calendly-embed__cell">12</span><span class="calendly-embed__cell">13</span><span class="calendly-embed__cell">14</span><span class="calendly-embed__cell">15</span><span class="calendly-embed__cell">16</span>
+                <span class="calendly-embed__cell">17</span><span class="calendly-embed__cell">18</span><span class="calendly-embed__cell">19</span><span class="calendly-embed__cell">20</span><span class="calendly-embed__cell">21</span><span class="calendly-embed__cell">22</span><span class="calendly-embed__cell">23</span>
+                <span class="calendly-embed__cell">24</span><span class="calendly-embed__cell">25</span><span class="calendly-embed__cell">26</span><span class="calendly-embed__cell">27</span><span class="calendly-embed__cell">28</span><span class="calendly-embed__cell">29</span><span class="calendly-embed__cell">30</span>
+              </div>
+            </div>
+            <div class="calendly-embed__slots">
+              <p class="calendly-embed__slots-title">Horários disponíveis</p>
+              <div class="calendly-embed__slot">9:00</div>
+              <div class="calendly-embed__slot">9:30</div>
+              <div class="calendly-embed__slot">10:00</div>
+              <div class="calendly-embed__slot">10:30</div>
+              <div class="calendly-embed__slot">11:00</div>
+              <div class="calendly-embed__slot">14:00</div>
+              <div class="calendly-embed__slot">14:30</div>
+              <div class="calendly-embed__slot">15:00</div>
+              <div class="calendly-embed__slot">15:30</div>
+              <div class="calendly-embed__slot">16:00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Podcast player (fixed bottom) -->
+  <div class="podcast-bar" id="podcast-bar" role="region" aria-label="Player do podcast do relatório" hidden>
+    <div class="podcast-bar__inner">
+      <button type="button" class="podcast-bar__close" id="podcast-close" aria-label="Fechar player">×</button>
+      <div class="podcast-bar__main">
+        <button type="button" class="podcast-bar__play" id="podcast-play" aria-label="Reproduzir ou pausar">
+          <span class="podcast-bar__play-icon podcast-bar__play-icon--play" aria-hidden="true">▶</span>
+          <span class="podcast-bar__play-icon podcast-bar__play-icon--pause" aria-hidden="true">❚❚</span>
+        </button>
+        <div class="podcast-bar__info">
+          <p class="podcast-bar__title">Relatório em áudio</p>
+          <p class="podcast-bar__section" id="podcast-section">Preparando…</p>
+        </div>
+        <div class="podcast-bar__timeline-wrap">
+          <div class="podcast-bar__timeline" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0" id="podcast-timeline">
+            <div class="podcast-bar__progress" id="podcast-progress"></div>
+          </div>
+          <span class="podcast-bar__time" id="podcast-time">0:00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slides deck (fullscreen) -->
+  <div class="slides-overlay" id="slides-overlay" role="dialog" aria-label="Apresentação do relatório" aria-modal="true" hidden>
+    <button type="button" class="slides-overlay__close" id="slides-close" aria-label="Fechar apresentação">×</button>
+    <div class="slides-overlay__nav slides-overlay__nav--prev" id="slides-prev" aria-label="Slide anterior">
+      <span aria-hidden="true">‹</span>
+    </div>
+    <div class="slides-overlay__nav slides-overlay__nav--next" id="slides-next" aria-label="Próximo slide">
+      <span aria-hidden="true">›</span>
+    </div>
+    <div class="slides-overlay__stage">
+      <div class="slides-overlay__slide" id="slides-current"></div>
+    </div>
+    <div class="slides-overlay__footer">
+      <span class="slides-overlay__counter" id="slides-counter">1 / 1</span>
+      <span class="slides-overlay__hint">Clique ou use as setas para navegar · Esc para sair</span>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="charts.js"></script>
+  <script src="config.js"></script>
+  <script src="podcast.js"></script>
+  <script src="slides.js"></script>
+  <script>
+    (function () {
+      var STORAGE_KEY = 'raio-x-sidebar-collapsed';
+      var sidebar = document.getElementById('sidebar-nav');
+      var toggle = document.getElementById('sidebar-toggle');
+      var panel = document.getElementById('sidebar-panel');
+      var collapseBtn = document.getElementById('sidebar-collapse');
+
+      if (sidebar && collapseBtn) {
+        var collapsed = localStorage.getItem(STORAGE_KEY) === 'true';
+        if (collapsed && window.innerWidth > 1024) sidebar.classList.add('is-collapsed');
+        collapseBtn.addEventListener('click', function () {
+          var isCollapsed = sidebar.classList.toggle('is-collapsed');
+          localStorage.setItem(STORAGE_KEY, isCollapsed);
+          collapseBtn.setAttribute('aria-label', isCollapsed ? 'Expandir índice' : 'Recolher índice');
+          collapseBtn.setAttribute('title', isCollapsed ? 'Expandir índice' : 'Recolher índice');
+        });
+        collapseBtn.setAttribute('aria-label', sidebar.classList.contains('is-collapsed') ? 'Expandir índice' : 'Recolher índice');
+        collapseBtn.setAttribute('title', sidebar.classList.contains('is-collapsed') ? 'Expandir índice' : 'Recolher índice');
+      }
+
+      if (sidebar && toggle && panel) {
+        toggle.addEventListener('click', function () {
+          var open = sidebar.classList.toggle('is-open');
+          toggle.setAttribute('aria-expanded', open);
+          toggle.setAttribute('aria-label', open ? 'Fechar menu de navegação' : 'Abrir menu de navegação');
+        });
+        panel.querySelectorAll('.sidebar-nav__link').forEach(function (link) {
+          link.addEventListener('click', function () {
+            if (window.innerWidth <= 1024) sidebar.classList.remove('is-open');
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.setAttribute('aria-label', 'Abrir menu de navegação');
+          });
+        });
+      }
+
+      var sectionIds = ['hero', 'intro', 'sobre-voce', 'financas', 'quote', 'mundo', 'portfolio', 'estrategia', 'diferencas', 'ativos', 'mensagem-final', 'cta'];
+      var observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            var id = entry.target.id;
+            if (!id) return;
+            document.querySelectorAll('.sidebar-nav__link').forEach(function (a) {
+              var href = a.getAttribute('href');
+              a.classList.toggle('is-active', href === '#' + id);
+            });
+          });
+        },
+        { rootMargin: '-20% 0px -60% 0px', threshold: 0 }
+      );
+      sectionIds.forEach(function (id) {
+        var el = document.getElementById(id);
+        if (el) observer.observe(el);
+      });
+    })();
+  </script>
+  <script>
+    (function () {
+      function setupCarousel(containerSel, prevSel, nextSel, cardSel, gap) {
+        var carousel = document.querySelector(containerSel);
+        var prevBtn = document.querySelector(prevSel);
+        var nextBtn = document.querySelector(nextSel);
+        if (!carousel || !prevBtn || !nextBtn) return;
+        gap = gap || 16;
+        function scrollBy(direction) {
+          var card = carousel.querySelector(cardSel);
+          var step = (card ? card.offsetWidth + gap : 360) * direction;
+          carousel.scrollBy({ left: step, behavior: 'smooth' });
+        }
+        prevBtn.addEventListener('click', function () { scrollBy(-1); });
+        nextBtn.addEventListener('click', function () { scrollBy(1); });
+      }
+      setupCarousel('.section-mundo .world-cards', '.world-carousel-nav__btn--prev', '.world-carousel-nav__btn--next', '.world-card', 16);
+      setupCarousel('.section-assets .asset-cards', '.assets-carousel-nav__btn--prev', '.assets-carousel-nav__btn--next', '.asset-card', 16);
+      setupCarousel('.stats-carousel', '.stats-carousel-nav__btn--prev', '.stats-carousel-nav__btn--next', '.stat-card', 10);
+    })();
+  </script>
+</body>
+</html>
