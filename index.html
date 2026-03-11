@@ -42,33 +42,29 @@
   <main class="page">
     <!-- Hero -->
     <section id="hero" class="hero section">
-      <div class="hero__container container">
-        <div class="hero__content">
-          <div class="hero__logo">
-            <img class="hero__logo-img" src="assets/0cfe657c80092b2cfb32acda7a385d499e2ca2cc.svg" alt="Raio-X" />
-            <span class="hero__logo-text">Raio-X</span>
-          </div>
-          <div class="hero__text">
-            <h1 class="heading-hero">Iasmim Biasi</h1>
-            <div class="hero__actions">
-              <p class="hero__reading-time">Tempo Médio de Leitura: <b>8 min</b></p>
-              <button type="button" class="hero__podcast-btn" id="podcast-trigger" aria-label="Ouça o relatório como podcast">
-                <span class="hero__btn-label">Ouça como um podcast</span>
-                <span class="hero__btn-badge">EM BREVE</span>
-              </button>
-              <button type="button" class="hero__slides-btn" id="slides-trigger" aria-label="Ver relatório em formato de apresentação">
-                <span class="hero__btn-label">Ver em slides</span>
-                <span class="hero__btn-badge">EM BREVE</span>
-              </button>
-            </div>
-          </div>
+      <div class="hero__content">
+        <div class="hero__logo">
+          <img class="hero__logo-img" src="assets/0cfe657c80092b2cfb32acda7a385d499e2ca2cc.svg" alt="Raio-X" />
+          <span class="hero__logo-text">Raio-X</span>
         </div>
-        <div class="hero__video-wrap">
-          <video class="hero__video" autoplay loop playsInline muted controlsList="nodownload">
-            <source src="_videos/hero.webm" type="video/webm" />
-          </video>
+        <div class="hero__text">
+          <h1 class="heading-hero">Iasmim Biasi</h1>
+          <div class="hero__actions">
+            <p class="hero__reading-time">Tempo Médio de Leitura: <b>8 min</b></p>
+            <button type="button" class="hero__podcast-btn" id="podcast-trigger" aria-label="Ouça o relatório como podcast">
+              <span class="hero__btn-label">Ouça como um podcast</span>
+              <span class="hero__btn-badge">EM BREVE</span>
+            </button>
+            <button type="button" class="hero__slides-btn" id="slides-trigger" aria-label="Ver relatório em formato de apresentação">
+              <span class="hero__btn-label">Ver em slides</span>
+              <span class="hero__btn-badge">EM BREVE</span>
+            </button>
+          </div>
         </div>
       </div>
+      <video class="hero__video" autoplay loop playsInline muted controlsList="nodownload" aria-hidden="true">
+        <source src="_videos/hero.webm" type="video/webm" />
+      </video>
     </section>
 
     <!-- Scores (bento) -->
