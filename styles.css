@@ -395,51 +395,57 @@ body {
   font-weight: 700;
 }
 
-.hero__podcast-btn {
+.hero__podcast-btn,
+.hero__slides-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   font-family: 'Inter Tight', sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
-  color: var(--accent-cyan);
-  background: transparent;
-  border: 2px solid var(--accent-cyan);
-  border-radius: var(--radius-sm);
-  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 28px;
   cursor: pointer;
-  transition: background 0.2s, color 0.2s;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-.hero__podcast-btn:hover {
-  background: rgba(116, 205, 255, 0.15);
-  color: var(--text-primary);
+.hero__podcast-btn:hover,
+.hero__slides-btn:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
 }
 
-.hero__podcast-btn:focus {
-  outline: 2px solid var(--accent-cyan);
+.hero__podcast-btn:focus,
+.hero__slides-btn:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.6);
   outline-offset: 2px;
+}
+
+.hero__podcast-btn {
+  background: #2172f5;
 }
 
 .hero__slides-btn {
-  font-family: 'Inter Tight', sans-serif;
-  font-size: 14px;
+  background: #3d355a;
+}
+
+.hero__btn-label {
+  display: inline;
+}
+
+.hero__btn-badge {
+  display: inline-block;
+  font-size: 10px;
   font-weight: 700;
-  color: rgba(181, 138, 255, 0.95);
-  background: transparent;
-  border: 2px solid rgba(181, 138, 255, 0.6);
-  border-radius: var(--radius-sm);
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s, border-color 0.2s;
-}
-
-.hero__slides-btn:hover {
-  background: rgba(181, 138, 255, 0.12);
-  color: rgb(222, 203, 255);
-  border-color: rgba(181, 138, 255, 0.8);
-}
-
-.hero__slides-btn:focus {
-  outline: 2px solid rgba(181, 138, 255, 0.8);
-  outline-offset: 2px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.18);
+  padding: 3px 8px;
+  border-radius: 8px;
 }
 
 .hero__video-wrap {
@@ -877,6 +883,20 @@ body.podcast-bar-open {
 .scores-bento__card--main .scores-bento__label {
   font-size: 16px;
   margin-top: 8px;
+}
+
+.scores-bento__desc {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 12px 0 0;
+}
+
+.scores-bento__card--main .scores-bento__desc {
+  margin-top: 12px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .scores-bento__score-line {
