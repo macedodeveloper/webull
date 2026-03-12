@@ -103,7 +103,7 @@
 
   var donutDatalabelsPlugin = {
     id: 'donutPercentLabels',
-    afterDraw: function (chart) {
+    afterDatasetsDraw: function (chart) {
       if (chart.config.type !== 'doughnut' || !chart.data.datasets.length) return;
       var ctx = chart.ctx;
       var meta = chart.getDatasetMeta(0);
