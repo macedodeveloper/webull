@@ -53,7 +53,7 @@
 
     var out = [];
 
-    out.push({ type: 'title', title: 'Raio-X · Iasmim Biasi' });
+    out.push({ type: 'title', title: 'Raio-X · Iasmim Souza' });
 
     var intro = main.querySelector('.intro__message');
     if (intro) {

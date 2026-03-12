@@ -101,6 +101,31 @@
     });
   }
 
+  var donutDatalabelsPlugin = {
+    id: 'donutPercentLabels',
+    afterDraw: function (chart) {
+      if (chart.config.type !== 'doughnut' || !chart.data.datasets.length) return;
+      var ctx = chart.ctx;
+      var meta = chart.getDatasetMeta(0);
+      var total = chart.data.datasets[0].data.reduce(function (a, b) { return a + b; }, 0);
+      meta.data.forEach(function (arc, i) {
+        var value = chart.data.datasets[0].data[i];
+        var pct = total ? ((value / total) * 100).toFixed(1) : '0';
+        var angle = (arc.startAngle + arc.endAngle) / 2;
+        var r = (arc.outerRadius + arc.innerRadius) / 2;
+        var x = chart.getDatasetMeta(0).data[0].x + Math.cos(angle) * r;
+        var y = chart.getDatasetMeta(0).data[0].y + Math.sin(angle) * r;
+        ctx.save();
+        ctx.fillStyle = chartColors.white;
+        ctx.font = 'bold 14px "Inter Tight", sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(pct + '%', x, y);
+        ctx.restore();
+      });
+    },
+  };
+
   function initPortfolioDonut() {
     var ctx = document.getElementById('chart-portfolio-donut');
     if (!ctx) return;
@@ -132,6 +157,7 @@
           },
         },
       },
+      plugins: [donutDatalabelsPlugin],
     });
   }
 
